@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env.local
+*.log
+server/uploads/food-images/*
+server/uploads/restaurant-images/*
+!server/uploads/food-images/.gitkeep
+!server/uploads/restaurant-images/.gitkeep
