@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #fff8f1;
+  color: #1f2937;
+}
+
+.dark body,
+body.dark {
+  background: #111827;
+  color: #f9fafb;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.btn-primary {
+  border-radius: 8px;
+  background: #f97316;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  transition: transform 160ms ease, background 160ms ease;
+}
+
+.btn-primary:hover {
+  background: #ea580c;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  border-radius: 8px;
+  border: 1px solid #fed7aa;
+  background: #fff7ed;
+  color: #c2410c;
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+}
+
+.surface {
+  border-radius: 8px;
+  border: 1px solid #fed7aa;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 40px rgba(124, 45, 18, 0.08);
+}
+
+.input {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #fdba74;
+  background: #fff;
+  padding: 0.75rem 0.9rem;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #f97316;
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.16);
+}
